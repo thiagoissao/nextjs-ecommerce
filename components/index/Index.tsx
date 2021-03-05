@@ -7,6 +7,7 @@ import { TShirtListItemInterface } from '../../interfaces/productsInterface';
 import Section from './Section';
 import Banner from './Banner';
 import SecondaryBanner from './SecondaryBanner';
+import Fade from 'react-reveal/Fade';
 
 export type IndexProps = {
   products: Array<TShirtListItemInterface>,
@@ -33,11 +34,13 @@ const Index = ({
       </Grid>
       <Grid item xs={12}>
         <Section title='Our Highlights'>
-          <ProductList
-            onClickAddToCart={() => { }}
-            onClickFavorite={() => { }}
-            products={products}
-          />
+          <Fade left>
+            <ProductList
+              onClickAddToCart={() => { }}
+              onClickFavorite={() => { }}
+              products={products}
+            />
+          </Fade>
         </Section>
       </Grid>
       <Grid item xs={12}>

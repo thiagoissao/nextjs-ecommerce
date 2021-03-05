@@ -8,11 +8,11 @@ import Typography from '@material-ui/core/Typography';
 import Image from 'next/image';
 import strings from '../../utils/strings';
 import useWidth from '../../hooks/useWidth';
+import Fade from 'react-reveal/Fade';
 
 const useStyles = makeStyles(theme => ({
   banner: {
     backgroundColor: theme.palette.primary.main,
-    opacity: 0.9,
     backgroundPosition: 'center',
     backgroundSize: 'contain',
     backgroundImage: 'url(/images/banner.jpg)'
@@ -24,22 +24,28 @@ const WeAre = () => {
   return (
     <Grid container justify='flex-end' alignItems='center' spacing={1}>
       <Grid item>
-        <Typography color='textSecondary' variant='h3' gutterBottom>
-          We are
+        <Fade right>
+          <Typography color='textSecondary' variant='h3' gutterBottom>
+            We are
         </Typography>
+        </Fade>
       </Grid>
       <Grid item>
-        <Image
-          width={width === 'xs' ? 100 : 200}
-          height={width === 'xs' ? 100 : 200}
-          alt={strings.appName}
-          src='/images/escrita_white.svg'
-        />
+        <Fade right>
+          <Image
+            width={width === 'xs' ? 100 : 200}
+            height={width === 'xs' ? 100 : 200}
+            alt={strings.appName}
+            src='/images/escrita_white.svg'
+          />
+        </Fade>
       </Grid>
       <Grid item>
-        <Typography gutterBottom color='textSecondary' variant='h3'>
-          !
+        <Fade right>
+          <Typography gutterBottom color='textSecondary' variant='h3'>
+            !
         </Typography>
+        </Fade>
       </Grid>
     </Grid>
   );
@@ -56,9 +62,11 @@ const Banner = () => {
           <Grid container>
             <Grid item xs={12}>
               <Box py={2}>
-                <Typography color='textSecondary' variant={width === 'xs' ? 'h4' : 'h2'}>
-                  Welcome to Next E-commerce
+                <Fade left>
+                  <Typography color='textSecondary' variant={width === 'xs' ? 'h4' : 'h2'}>
+                    Welcome to Next E-commerce
                 </Typography>
+                </Fade>
               </Box>
             </Grid>
             <Grid item xs={12}>

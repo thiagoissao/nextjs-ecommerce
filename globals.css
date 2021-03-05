@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Archivo';
+  src: url('/fonts/Archivo-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'IndieFlower';
+  src: url('/fonts/IndieFlower-Regular.ttf');
+}
+
+body {
+  margin: 0
+}
+
+::-webkit-scrollbar:horizontal{
+  height: 8px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background:  #F3F3F3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #353c3f;
+  border-radius: 16px; 
+}

@@ -27,7 +27,7 @@ const ProductDetails = ({
         <Grid container spacing={1}>
           <Grid item xs={12}>
             <Typography variant='h5' color='textPrimary'>
-              <b>Detalhes do Produto</b>
+              <b>Product Details</b>
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -41,7 +41,7 @@ const ProductDetails = ({
         <Grid container spacing={1}>
           <Grid item xs={12}>
             <Typography variant='h5' color='textPrimary'>
-              <b>Material do Produto</b>
+              <b>Product Material</b>
             </Typography>
           </Grid>
           <Grid item xs={12}>

@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     opacity: 0.9,
     backgroundPosition: 'center',
     backgroundSize: 'contain',
-    backgroundImage: 'url(/images/banner.jpg)'
+    backgroundImage: 'url(/images/banner2.jpg)'
   },
 }));
 
@@ -45,9 +45,8 @@ const WeAre = () => {
   );
 };
 
-const Banner = () => {
+const SecondaryBanner = () => {
   const classes = useStyles();
-  const width = useWidth();
 
   return (
     <Paper elevation={0} className={classes.banner}>
@@ -56,8 +55,8 @@ const Banner = () => {
           <Grid container>
             <Grid item xs={12}>
               <Box py={2}>
-                <Typography color='textSecondary' variant={width === 'xs' ? 'h4' : 'h2'}>
-                  Welcome to Next E-commerce
+                <Typography color='textSecondary' variant='h2'>
+                  Better days are coming....
                 </Typography>
               </Box>
             </Grid>
@@ -75,4 +74,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default SecondaryBanner;

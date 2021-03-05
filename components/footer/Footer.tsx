@@ -15,6 +15,7 @@ import {
 } from 'react-icons/ai';
 import strings from '../../utils/strings';
 import Tooltip from '../pure/Tooltip';
+import useWidth from '../../hooks/useWidth';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -38,6 +39,7 @@ const useStyles = makeStyles(theme => ({
 
 const Footer = () => {
   const classes = useStyles();
+  const width = useWidth();
   return (
     <Grid
       className={classes.root}
@@ -49,10 +51,14 @@ const Footer = () => {
           <Box my={5}>
             <Grid container>
               <Grid item xs={12}>
-                <Grid container justify='space-between' spacing={2} alignItems='center'>
+                <Grid
+                  container
+                  justify={width === 'xs' ? 'flex-start' : 'space-between'}
+                  spacing={2}
+                  alignItems='center'>
                   <Grid item>
                     <Typography variant='h5' color='textPrimary'>
-                      Siga a Gente nas Redes Sociais
+                      Follow us on social media
                     </Typography>
                   </Grid>
                   <Grid item>

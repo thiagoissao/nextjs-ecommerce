@@ -6,7 +6,7 @@ import ProductList from './ProductList';
 import { TShirtListItemInterface } from '../../interfaces/productsInterface';
 import Section from './Section';
 import Banner from './Banner';
-import SustainabilityBanner from '../generic/SustainabilityBanner';
+import SecondaryBanner from './SecondaryBanner';
 
 export type IndexProps = {
   products: Array<TShirtListItemInterface>,
@@ -24,15 +24,15 @@ const Index = ({
         <Banner />
       </Grid>
       <Grid item xs={12}>
-        <Section title='Lançamento!'>
+        <Section title='Release!'>
           <ProductBanner product={productRelease} />
         </Section>
       </Grid>
       <Grid item xs={12}>
-        <SustainabilityBanner />
+        <SecondaryBanner />
       </Grid>
       <Grid item xs={12}>
-        <Section title='Nossos destaques'>
+        <Section title='Our Highlights'>
           <ProductList
             onClickAddToCart={() => { }}
             onClickFavorite={() => { }}
@@ -41,7 +41,7 @@ const Index = ({
         </Section>
       </Grid>
       <Grid item xs={12}>
-        <Section title='Fale com a Gente'>
+        <Section title='Talk to us'>
           <ContactBanner />
         </Section>
       </Grid>

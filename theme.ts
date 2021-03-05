@@ -8,7 +8,7 @@ export const colors = {
 
 export const theme = createMuiTheme({
   typography: {
-    fontFamily: ['Archivo', 'IndieFlower', 'Roboto'].join(',')
+    fontFamily: ['Raleway', 'Archivo', 'IndieFlower', 'Roboto'].join(',')
   },
   palette: {
     background: {

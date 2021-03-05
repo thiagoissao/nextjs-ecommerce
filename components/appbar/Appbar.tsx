@@ -4,7 +4,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Container from '@material-ui/core/Container';
-import SectionButtonGroup from './SectionButtonGroup';
 import Logo from './Logo';
 import { Section } from '../../interfaces/homeInterface';
 
@@ -39,16 +38,6 @@ const Appbar = ({ selected, onChange }: AppbarProps) => {
             <Grid container alignItems='center' spacing={1} justify='space-between'>
               <Grid item>
                 <Logo />
-              </Grid>
-              <Grid item>
-                <Grid container justify='center'>
-                  <Grid item>
-                    <SectionButtonGroup
-                      selected={selected}
-                      onChange={onChange}
-                    />
-                  </Grid>
-                </Grid>
               </Grid>
             </Grid>
           </Container>

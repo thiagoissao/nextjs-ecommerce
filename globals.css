@@ -8,6 +8,11 @@
   src: url('/fonts/IndieFlower-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/Raleway-VariableFont_wght.ttf');
+}
+
 body {
   margin: 0
 }

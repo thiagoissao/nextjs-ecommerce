@@ -122,11 +122,11 @@ const ProductCardDetails = ({
           </Grid>
         </Grid>
         <Grid item xs={12}>
-          <WhatsappButton target='_blank' href={whatsappHref} />
+          <WhatsappButton href='' />
         </Grid>
         <Grid item xs={12}>
           <Typography color='textPrimary'>
-            Frete Grátis para Maringá(PR) e Região
+            Frete Grátis para todo Brasil
           </Typography>
         </Grid>
       </Grid>

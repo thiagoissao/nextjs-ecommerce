@@ -8,8 +8,8 @@ import ProductDetails from './ProductDetails';
 import { Size, TShirtItemInterface } from '../../interfaces/productsInterface';
 import strings from '../../utils/strings';
 import format from '../../utils/formatters';
-import SustainabilityBanner from '../generic/SustainabilityBanner';
 import useWidth from '../../hooks/useWidth';
+import SecondaryBanner from '../index/SecondaryBanner';
 
 export type DetailsProps = {
   tshirt: TShirtItemInterface;
@@ -80,7 +80,7 @@ const Details = ({ tshirt }: DetailsProps) => {
       </Grid>
       <Grid item xs={12}>
         <Box paddingTop={4}>
-          <SustainabilityBanner />
+          <SecondaryBanner />
         </Box>
       </Grid>
     </Grid>

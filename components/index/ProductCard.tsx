@@ -161,7 +161,7 @@ const ProductCard = ({
           withWhatsappButton && (
             <Grid container>
               <Grid item xs={12}>
-                <WhatsappButton href={whatsappHref} />
+                <WhatsappButton href='' />
               </Grid>
             </Grid>
           )
